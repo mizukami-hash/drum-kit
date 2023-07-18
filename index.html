@@ -4,109 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <!-- 参考：https://www.youtube.com/watch?v=VuN8qwZoego -->
-    <title>Drum Kit</title>
+    <title>Sounds Of Animals</title>
   </head>
   <body>
-    <div class="keys">
-      <p>Piano</p>
-      <div class="container">
-        <!-- カスタムデータ属性 -->
-        <div data-key="65" class="key">
-          <kbd>A</kbd>
-          <span class="sound">C/ド</span>
-        </div>
-        <div data-key="83" class="key">
-          <kbd>S</kbd>
-          <span class="sound">D/レ</span>
-        </div>
-        <div data-key="68" class="key">
-          <kbd>D</kbd>
-          <span class="sound">E/ミ</span>
-        </div>
-        <div data-key="70" class="key">
-          <kbd>F</kbd>
-          <span class="sound">F/ファ</span>
-        </div>
-        <div data-key="71" class="key">
-          <kbd>G</kbd>
-          <span class="sound">G/ソ</span>
-        </div>
-        <div data-key="72" class="key">
-          <kbd>H</kbd>
-          <span class="sound">A/ラ</span>
-        </div>
-
-        <div data-key="74" class="key">
-          <kbd>J</kbd>
-          <span class="sound">B/シ</span>
-        </div>
-
-        <div data-key="75" class="key">
-          <kbd>K</kbd>
-          <span class="sound">C/ド</span>
+    <p>Instruments</p>
+    <div class="instruments">
+      <div data-key="81" class="key">
+        <div class="image">
+          <div class="text">xylophone</div>
+          <img src="./img/xylophone.jpg" alt="" class="instrument" />
+          <kbd>Q</kbd>
         </div>
       </div>
-      <!-- container -->
 
-      <p>drum</p>
-      <div class="container">
-        <div data-key="90" class="key">
-          <kbd>Z</kbd>
-          <span class="sound">tom1</span>
-        </div>
-
-        <div data-key="88" class="key">
-          <kbd>X</kbd>
-          <span class="sound">tom2</span>
-        </div>
-
-        <div data-key="67" class="key">
-          <kbd>C</kbd>
-          <span class="sound">tom3</span>
-        </div>
-
-        <div data-key="86" class="key">
-          <kbd>V</kbd>
-          <span class="sound">hat</span>
-        </div>
-
-        <div data-key="66" class="key">
-          <kbd>B</kbd>
-          <span class="sound">snare</span>
-        </div>
-
-        <div data-key="78" class="key">
-          <kbd>N</kbd>
-          <span class="sound">cymbal</span>
-        </div>
-
-        <div data-key="77" class="key">
-          <kbd>M</kbd>
-          <span class="sound">kick</span>
+      <div data-key="87" class="key">
+        <div class="image">
+          <img src="./img/triangle.jpg" alt="" class="instrument" />
+          <div class="text">triangle</div>
+          <kbd>W</kbd>
         </div>
       </div>
-      <!-- /*container*/ -->
+
+      <div data-key="69" class="key">
+        <div class="image">
+          <img src="./img/drum.jpg" alt="" class="instrument" />
+          <div class="text">drum</div>
+          <kbd>E</kbd>
+        </div>
+      </div>
+
+      <div data-key="82" class="key">
+        <div class="image">
+          <img src="./img/piano.jpg" alt="" class="instrument" />
+          <div class="text">piano</div>
+          <kbd>R</kbd>
+        </div>
+      </div>
     </div>
-    <!-- keys -->
 
-    <audio data-key="65" src="./sounds/piano1_1do.mp3"></audio>
-    <audio data-key="83" src="./sounds/piano1_2re.mp3"></audio>
-    <audio data-key="68" src="./sounds/piano1_3mi.mp3"></audio>
-    <audio data-key="70" src="./sounds/piano1_4fa.mp3"></audio>
-    <audio data-key="71" src="./sounds/piano1_5so.mp3"></audio>
-    <audio data-key="72" src="./sounds/piano1_6ra.mp3"></audio>
-    <audio data-key="74" src="./sounds/piano1_7si.mp3"></audio>
-    <audio data-key="75" src="./sounds/piano1_8do.mp3"></audio>
+    <p>Animals</p>
+    <div class="animals">
+      <div data-key="65" class="key">
+        <div class="image">
+          <img src="./img/dog.jpg" alt="" class="animal" />
+          <div class="text">dog</div>
+          <kbd>A</kbd>
+        </div>
+      </div>
 
-    <audio data-key="90" src="./sounds/drum2_tom1.mp3"></audio>
-    <audio data-key="88" src="./sounds/drum1_tom2.mp3"></audio>
-    <audio data-key="67" src="./sounds/drum2_tom3.mp3"></audio>
-    <audio data-key="86" src="./sounds/drum1_hat.mp3"></audio>
-    <audio data-key="66" src="./sounds/drum2_snare.mp3"></audio>
-    <audio data-key="78" src="./sounds/drum1_cymbal.mp3"></audio>
-    <audio data-key="77" src="./sounds/drum2_kick.mp3"></audio>
-    <!-- <audio data-key="76" src="./sounds/nylon-guitar-shot-c-note-18.wav"></audio> -->
+      <div data-key="83" class="key">
+        <div class="image">
+          <img src="./img/cat.jpg" alt="" class="animal" />
+          <div class="text">cat</div>
+          <kbd>S</kbd>
+        </div>
+      </div>
+
+      <div data-key="68" class="key">
+        <div class="image">
+          <img src="./img/sheep.jpg" alt="" class="animal" />
+          <div class="text">sheep</div>
+          <kbd>D</kbd>
+        </div>
+      </div>
+
+      <div data-key="70" class="key">
+        <div class="image">
+          <img src="./img/goat.jpg" alt="" class="animal" />
+          <div class="text">goat</div>
+          <kbd>F</kbd>
+        </div>
+      </div>
+
+      <div data-key="71" class="key">
+        <div class="image">
+          <img src="./img/elephant.jpg" alt="" class="animal" />
+          <div class="text">elephant</div>
+          <kbd>G</kbd>
+        </div>
+      </div>
+    </div>
+
+    <audio data-key="81" src="./notes/xylophone.mp3"></audio>
+    <audio data-key="87" src="./notes/triangle.mp3"></audio>
+    <audio data-key="69" src="./notes/drum1_tom2.mp3"></audio>
+    <audio data-key="82" src="./notes/piano1_1do.mp3"></audio>
+
+    <audio data-key="65" src="./sound_animals/dog.mp3"></audio>
+    <audio data-key="83" src="./sound_animals/cat.mp3"></audio>
+    <audio data-key="68" src="./sound_animals/sheep.mp3"></audio>
+    <audio data-key="70" src="./sound_animals/goat.mp3"></audio>
+    <audio data-key="71" src="./sound_animals/elephant.mp3"></audio>
     <script src="main.js"></script>
   </body>
 </html>

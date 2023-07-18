@@ -1,16 +1,12 @@
-"use strict";
-// カスタムデータ属性
-// htmlはdata-から始める
-// JavaScriptは要素を取得してからdataset.keyで呼び出し
-// 2単語以上の場合は-を削って先頭を大文字に
 // const audio = document.querySelector(".key");
-// console.log(audio.dataset.key);
 
+"use strict";
 {
   window.addEventListener("keydown", (e) => {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
     console.log(audio);
+    console.log(e.keyCode);
     if (!audio) {
       return;
     }
