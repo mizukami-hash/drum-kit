@@ -1,21 +1,36 @@
-body,
-h1,
-div,
-p {
-  /* margin:0;
-    padding:0; */
-  font-weight: bold;
+body {
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+h1 {
+  text-align: center;
 }
 
 .animals,
 .instruments {
-  /* width:900px; */
+  margin: 40px auto;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(178, 183, 183, 0.2);
 }
-p {
+.animals {
+  width: 800px;
+}
+.instruments {
+  width: 600px;
+}
+h2 {
   display: block;
   width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.icons {
+  width: 32px;
+  height: 32px;
+  align-items: baseline;
+  padding: 0 0 7px 7px;
 }
 
 .animal:hover {
@@ -23,8 +38,6 @@ p {
 }
 
 .image {
-  /* width:200px; */
-  /* margin:10px; */
   overflow: hidden;
   position: relative;
 }
@@ -40,10 +53,8 @@ img {
   top: 0;
   left: 0;
   text-align: center;
-
   opacity: 0;
   z-index: 30;
-  /* background-color:#aaa; */
   color: white;
 
   background-color: rgba(11, 11, 11, 0.3);
@@ -53,32 +64,31 @@ img {
 }
 
 kbd {
-  border: 3px solid rgb(231, 111, 111);
+  border: 3px solid rgb(14, 0, 0);
+  box-shadow: 3px 3px 2px black;
   border-radius: 5px;
   font-size: 1rem;
-  padding: 0.4rem 0.6rem;
-  /* transition: all 0.07s; */
+  font-weight: 600;
+  padding: 0.5rem 0.6rem 0.7rem;
   width: 10px;
   height: 10px;
   text-align: center;
-  color: white;
-  background-color: rgba(220, 66, 66, 0.4);
+
+  color: black;
+  background-color: white;
   position: absolute;
   right: 5%;
   bottom: 5%;
 }
 .key {
-  /* border: 2px solid rgb(74, 72, 72); */
   border-radius: 5px;
   font-size: 1rem;
   margin: 20px;
   transition: all 0.07s;
   width: 200px;
-  /* height: 60px; */
+
   text-align: center;
   color: white;
-  /* background-color: rgba(162, 147, 147, 0.4); */
-  text-shadow: 0 0 5px black;
 }
 
 .playing {
